@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHQ-9 Test</title>
+</head>
+<body>
+    <h1>PHQ-9 Test</h1>
+    <form action="/submit" method="post">
+        {% for question in questions %}
+            <p>{{ question }}</p>
+            <select name="q{{ loop.index0 }}">
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

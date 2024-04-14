@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">MindBot</div>
+        <div class="navs">
+            <a href="#">PHQ-9</a>
+            <a href="#">Therapists</a>
+            <a href="#">Stories</a>
+            <a href="#">About us</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="quoteblock">
+            <div class="quote">Seven times down<br>Eight times up</div>
+            <div class="tools">
+                <div class="missions">
+                    <div class="container">
+                        <div class="todo-app">
+                            <h2>To-Do List <img src="/static/images/icon.png" alt="icon"></h2>
+                            <div class="row">
+                                <input type="text" id="input-box" placeholder="add your text">
+                                <button onclick="addTask()">Add</button>
+                            </div>
+                            <ul id="list-container">
+                                <!-- <li class="checked">task1</li>
+                                <li>task1</li>
+                                <li>task1</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mindful">
+
+                    <div class="input">
+                        <label for="input">Select Breaths</label>
+                        <select class="breath-input">
+                            <option value="3">3 Breaths</option>
+                            <option value="5">5 Breaths</option>
+                            <option value="7">7 Breaths</option>
+                        </select>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle-outline"></div>
+                        <div class="circle-progress"></div>
+                    </div>
+                    <p class="breaths">Breaths remaining: <span class="breaths-text">3</span></p>
+                    <p class="instructions">Are you ready to start breathing?</p>
+                    <button class="start">Begin</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="chatbot">
+            <div class="msg">You can talk to me</div>
+
+
+
+            <div class="bot">
+                <div id="chatbox">
+                    {% for sender, message in chat_history %}
+                        <div><strong>{{ sender }}:</strong> {{ message }}</div>
+                    {% endfor %}
+                </div>
+                <form action="/chat" method="post">
+                    <input id="userInput" name="user_input" type="text" placeholder="Type your message here...">
+                    <input type="submit" value="Send" id ="sendButton">
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <button id="phq"><a href="phq9">Take your PHQ9 test</a></button>
+    <div class="therapists">
+        <h1>Talk to the therapists</h1>
+        <div class="op">
+            <div class="t">
+                <img src="/static/images/johann.jpg" alt="#">
+                <h2>Dr Johann</h2>
+                <p>+91 8528528521</p>
+                <p>Empathetic healer, guiding minds towards peace with unwavering patience and wisdom.</p>
+            </div>
+            <div class="t">
+                <img src="/static/images/johann.jpg" alt="#">
+                <h2>Dr Johann</h2>
+                <p>+91 8528528521</p>
+                <p>Empathetic healer, guiding minds towards peace with unwavering patience and wisdom.</p>
+            </div>
+            <div class="t">
+                <img src="/static/images/johann.jpg" alt="#">
+                <h2>Dr Johann</h2>
+                <p>+91 8528528521</p>
+                <p>Empathetic healer, guiding minds towards peace with unwavering patience and wisdom.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="stories">
+        
+            
+    </div>
+
+
+    <footer>
+        <h1 style="text-align: center;">About us</h1>
+        <div class="we">
+            <div class="us">
+                <h2>Pritish Majumdar</h2>
+                <div class="contacts">
+                    <a href="#"><i class='bx bxl-instagram links'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square links'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle links'></i></a>
+                    <a href="#"><i class='bx bx-envelope links'></i></a>
+                </div>
+            </div>
+            <div class="us">
+                <h2>Sarvagya Singh</h2>
+                <div class="contacts">
+                    <a href="#"><i class='bx bxl-instagram links'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square links'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle links'></i></a>
+                    <a href="#"><i class='bx bx-envelope links'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+       
+    <script src="/static/js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

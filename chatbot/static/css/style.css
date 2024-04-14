@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('/static/images/pot1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    /* visibility: ; */
+}
+.navbar{
+    width: 95vw;
+    /* border: 5px solid red; */
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    background-color: rgba(191, 58, 58, 0.841);
+    border-radius: 70px;
+    /* background-image: linear-gradient(rgba(0, 0, 255, 0.192),rgba(0, 128, 0, 0)); */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    font-weight: 15px;
+}
+.navbar .name{
+    font-size: 30px;
+    color: white;
+    font-weight: 20px;
+}
+.main{
+    width: 95vw;
+    /* border: 5px solid green; */
+    display: flex;
+    height: 1200px;
+    /* flex-direction: column; */
+    justify-content:space-evenly;
+    align-items: end;
+}
+.quoteblock{
+    width: 56%;
+}
+.tools{
+    display: flex;
+    width: 100%;
+}
+.missions{
+    width: 100%;
+    height: 600px;
+    border: 5px solid blue;
+    margin-right: 10px;
+}
+.mindful{
+    width: 100%;
+    height: 740px;
+    /* border: 5px solid orange; */
+    margin-left: 10px;
+    background-color: #45ff9971;
+    border-radius: 13px;
+    padding-top: 55px;
+    font-size: 20px;
+}
+.chatbot{
+    width: 28%;
+    height: 1000px;
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid red;
+}
+.msg{
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 70px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.chatbox{
+    height: 500px;
+    width: 100%;
+    background-color: #4e085f;
+}
+form{
+    width: 100%;
+    background-color: white;
+}
+.quote{
+    margin-bottom: 200px;
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+}
+#phq{
+    height: 70px;
+    width: 600px;
+    padding: 8px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    /* margin-left: 48%; */
+    margin: 15px;
+    transition: .2s;
+    position: relative;
+}
+#phq:hover{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+/* button:hover{
+    font-weight: bold;
+    transform: translateY(-5px);
+} */
+.therapists{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.op{
+    /* border: 5px solid turquoise; */
+    background-color: rgba(0, 0, 234, 0.395);
+    width: 100vw;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.t{
+    /* background-color: red; */
+    display: flex;
+    /* height: ; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.therapists img{
+    
+    
+    height: 200px;
+    border-radius: 50%;
+}
+.stories{
+    /* border: 5px solid lawngreen; */
+    width: 95vw;
+    height: 500px;
+    margin: 10px;
+}
+footer{
+    background-color: white;
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.we{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer a{
+    color: black;
+}
+footer .links{
+    font-size: 40px;
+    color: black;
+}
+.us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.missions{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+
+/*======================================================================================================*/
+
+/*todo*/
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: white;
+    background: #ff5945;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('/static/images/unchecked.png');
+    background-size:cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: #555555d0;
+}
+ul li.checked::before{
+    background-image: url('/static/images/checked.png');
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: #edeef0;
+}
+
+
+
+
+/*======================================================================================================*/
+
+
+
+/*meditation*/
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.input label {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.input select {
+    border: none;
+    border-radius: 8px;
+    /* min-width: 300px; */
+    font-size: 16px;
+    padding: 8px 4px;
+    background-color: #8e70f8bd;
+    width: 75%;
+    margin-left: 50px;
+    color: white;
+}
+
+.input select:focus{
+    outline: none;   
+}
+
+.circle-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.circle-outline{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 15px solid #f1f1f1;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.5);
+}
+
+.circle-progress{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #6236ff;
+    border-radius: 50%;
+    transition: 4s ease all;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.5);
+}
+
+.circle-grow{
+    transform: scale(5.3);
+}
+
+.breaths{
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.instructions{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.mindful button{
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #6236ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: .3s ease all;
+    box-shadow: 0 1px 3px -3px rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.6 );
+    position: relative;
+    transform: translateX(125px);
+}
+
+button:hover{
+    background-color: white;
+    color: #6236ff;
+}
+
+.button-inactive{
+    pointer-events: none;
+    background-color: #969696;
+    color: white;
+} 
+
+
+/*==============================================================*/
+/*Stories*/
+
+.testimonial{
+    position: relative;
+    /* max-width: 900px; */
+    width: 100%;
+    padding: 50px 0;
+    background-color: white;
+    row-gap: 30px;
+    overflow: hidden;
+}
+.testimonial .image{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonial .slide{
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.slide p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 100px;
+    color: #333;
+}
+.slide .quote-icon{
+    font-size: 30px;
+    color: #4070f4;
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
